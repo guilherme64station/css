@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+ }
+
+body{
+    background-color: #fff;
+ }
+/* estilo do cabeçalho */
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #555;
+    color: #fff;
+    padding: 15px 50px;
+ }
+/* estilo do título do cabeçalho */
+header h1{
+    font-size: 24px;
+}
+
+/* estilo  do menu de seleção*/
+.header-menu select{
+    padding: 10px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer; 
+}
+/* estilo do banner principal */
+    .banner{
+        height: 400px;
+        background: url(https://cdn.pixabay.com/photo/2018/05/02/09/29/auto-3368094_640.jpg) no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+    }
+
+.catalong{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 40px 50px;
+}
+
+.catalong-card{
+    background-color: #555;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.1);
+    transition: transform 0.3s ease;
+}
+
+ .catalong-card:hover{
+   transform: scale(1.05);
+ }
+
+ .catalong-card img{
+    width: 100%;
+    border-radius: 10px;
+ }
+
+  .catalong-card h3{
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  .catalong-card p {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .catalong-card button:hover {
+    background-color: black;
+  }
+  .catalong-card button{
+    padding: 10px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+    transition: backgroud-color 0.3s ease;
+  }
+  .catalong-card button:hover{
+    background-color: blue;
+  }
+
+  .contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .contact-form{
+    background-color: #555;
+    padding: 40px 50px;
+    margin-top: 40px;
+  }
+  .contact-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .contact-form input,
+  .contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
